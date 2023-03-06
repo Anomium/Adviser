@@ -7,14 +7,17 @@ import { CrearProductoComponent } from './components/crear-producto/crear-produc
 import { ProductoComponent } from './components/producto/producto.component';
 import { SharedModule } from '@shared/shared.module';
 import { ProductoService } from './shared/service/producto.service';
-
+import { ChatMsgComponent } from "./components/chat/chat-msg/chat-msg.component";
+import { ChatComponent } from "./components/chat/chat.component";
 
 @NgModule({
   declarations: [
     CrearProductoComponent,
     ListarProductoComponent,
     BorrarProductoComponent,
-    ProductoComponent
+    ProductoComponent,
+    ChatMsgComponent,
+    ChatComponent
   ],
   imports: [
     ProductoRoutingModule,

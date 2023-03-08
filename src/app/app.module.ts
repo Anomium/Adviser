@@ -6,19 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from '@home/home.component';
 import { CoreModule } from '@core/core.module';
 import { CookieService } from 'ngx-cookie-service';
+import { SubirArchivoComponent } from './feature/producto/components/subir-archivo/subir-archivo.component';
+import { AlifeFileToBase64Module } from 'alife-file-to-base64';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SubirArchivoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
-      ],
+    CoreModule,
+    AlifeFileToBase64Module
+  ],
   providers: [CookieService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
